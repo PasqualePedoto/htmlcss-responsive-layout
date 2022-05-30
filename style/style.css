@@ -39,8 +39,14 @@
     height: 400px;
 }
 
+/* Color bgc */
+
 .bgc-blue{
     background-color: steelblue;
+}
+
+.bgc-black{
+    background-color: #3D3D3D;
 }
 
 /* Inside container per allineare tutti i contenuti
@@ -229,4 +235,15 @@ quality */
     height: 50px;
     border-radius: 20px;
     margin: 0 auto;
+}
+
+/* FOOTER */
+
+footer{
+    margin-top: -20px;
+    padding: 20px 0;
+
+    text-align: center;
+
+    color: white;
 }
