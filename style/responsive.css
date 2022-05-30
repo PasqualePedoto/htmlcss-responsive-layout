@@ -1,0 +1,54 @@
+/* RESPONSIVE FILE */
+
+/* Tablet 768px responsive */
+
+@media screen and (min-width: 768px) {
+
+    /* Modifico i container per adattarli alle 
+    nuove dimensioni */
+
+    .container{
+        max-width: 768px;
+    }
+
+    .inside-container{
+        max-width: 740px;
+    }
+
+    /* Cambio il display in modo tale da 
+    organizzare meglio le varie aree */
+
+    #process{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    /* Dò delle dimensioni relative per best-practice
+    e gestisco le dimensioni di ognuno */
+    
+    main section div:first-child{
+        max-width: 58%;
+    }
+
+    main section div:nth-child(2){
+        max-width: 40%;
+    }
+
+    main section div:nth-child(3)
+    ,main section div:nth-child(4)
+    ,main section div:nth-child(5){
+        max-width: 31%;
+    }
+
+
+
+
+    
+
+    
+
+    
+}
+
+/* Desktop responsive 992px */
