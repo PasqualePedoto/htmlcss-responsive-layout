@@ -1,0 +1,50 @@
+/* RESET */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* UTILITIES */
+
+.border{
+    border: 1px solid black;
+}
+
+.container{
+    max-width: 480px;
+    margin: 0 auto;
+}
+
+/* Inside container per allineare tutti i contenuti
+ verticalmente */
+
+.inside-container{
+    max-width: 450px;
+    margin: 0 auto;
+}
+
+/* PADDING UTILS */
+
+.small-pad-tb{
+    padding: 10px 0;
+}
+
+/********** HEADER **********/
+
+/* NAVIGATION */
+
+header nav{
+    min-height: 50px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Logo nell'header */
+
+.mini-block-header{
+    min-height: 100%;
+    max-width: 50px;
+}
