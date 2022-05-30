@@ -39,6 +39,10 @@
     height: 400px;
 }
 
+.bgc-blue{
+    background-color: steelblue;
+}
+
 /* Inside container per allineare tutti i contenuti
  verticalmente */
 
@@ -200,4 +204,29 @@ quality */
 
     background-color: steelblue;
     color: white;
+}
+
+/* About us Section */
+
+/* Modelliamo il bottone nella section about us */
+
+#about-us .btn.about-us-btn{
+    max-width: 100px;
+    height: 20px;
+
+    color: white;
+}
+
+/* Started section */
+
+
+
+#started .btn.started-btn{
+    background-color: white;
+    color: steelblue;
+
+    max-width: 250px;
+    height: 50px;
+    border-radius: 20px;
+    margin: 0 auto;
 }
