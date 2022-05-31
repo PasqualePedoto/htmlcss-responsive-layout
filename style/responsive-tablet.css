@@ -1,120 +1,84 @@
-/* RESPONSIVE FILE */
+/* TABLET 768PX RESPONSIVE */
 
-/* Tablet 768px responsive */
+@media screen and (min-width: 768px){
 
-@media screen and (min-width: 768px) {
-
-    /* Modifico i container per adattarli alle 
-    nuove dimensioni */
+    /* Adattoiamo il container alle dimensioni del tablet */
 
     .container{
         max-width: 768px;
-    }
+    } 
 
-    .inside-container{
-        max-width: 740px;
-    }
+    /********** POINTS ***********/
 
-    /* Cambio il display in modo tale da 
-    organizzare meglio le varie aree */
+    /* Modifichiamo la section points in modo tale da
+    ottenere uan suddivisione corretta */
 
-    #process #first-row, #process #second-row{
+    .row{
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
+
+        margin: 0 -1rem;
     }
 
-    /* Dò delle dimensioni relative per best-practice
-    e gestisco le dimensioni di ognuno */
-    
-    main section #first-row div:first-child{
-        max-width: 58%;
+    /* Qui selezioniamo esclusivamente la prima card
+    perchè avrà grandezza raddoppiata rispetto alle 
+    altre 5 cards */
+
+    .col:first-child{
+        width: calc(100% / 3 * 2 - 0.5rem);
+        padding: 0 0.5rem;
     }
 
-    main section #first-row div:nth-child(2){
-        max-width: 40%;
+    .col{
+        width: calc(100% / 3 - 0.5rem);
+        padding: 0 0.5rem;
     }
 
-    main section #second-row div:nth-child(1)
-    ,main section #second-row div:nth-child(2)
-    ,main section #second-row div:nth-child(3){
-        max-width: 33%;
-    }
+    /************TESTIMONIALS**************/
 
-    /* Testimonial section */
-
-    /* Rendiamo flex le cards in modo da cambiare
-    la disposizione degli elementi all'interno */
-
-    #testimonials .partner-card{
-        display: flex;
-    }
-
-    /* In tal modo il cerchio avrà la sua 
-    dimensione corretta */
-    #testimonials .partner-card .img-partner{
-        flex-basis: 100%;
-    }
-
-    /* Al fine di posizionare correttamente 
-    il testo rendiamo anche questo div flex */
-
-    .partner-card .testimonials-descr{
-        display: flex;
+    .flex-col{
+        flex-direction: row;
         align-items: center;
-        flex-wrap: wrap;
-
-        padding: 20px;
     }
 
-    .partner-card .testimonials-descr p{
-        flex-basis: 100%;
+    .flex-col > div{
+        flex-basis: 70%;
+
+        /* Cambiamo la posizione del testo verso sinistra */
+        
+        text-align: left;
     }
 
-    .partner-card .testimonials-descr address{
-        margin-top: -20px;
+    .flex-col > div:first-child{
+        flex-basis: 30%;
     }
 
-    /* Quality section */
+    /*************FEATURES SECTION****************/
 
-    /* Posizioniamo le cards a due a due */
-
-    #quality .qualities{
-        display: flex;
+    #features .features-cards{
+        flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-between;
     }
-    
-    #quality .qualities div{
-        flex-basis: 48%;
 
-        border-radius: 20px;
+    .features-cards > div{
+        width: calc(100% / 2 - 0.5rem);
     }
 
-    /* About us section */
+    /* ************ABOUT US********** */
 
-    #about-us .inside-container{
+    #about-us .tablet-flex{
         display: flex;
         justify-content: space-between;
+
+        margin: 0 -0.5rem;
     }
 
-    /* Assegno delle dimensioni agli elementi
-    flexati */
+    .tablet-flex > div{
+        width: calc(100% / 2 - 0.5rem);
 
-    #about-us .inside-container div:first-child{
-        flex-basis: 55%;
-    }
-
-    #about-us .inside-container div:nth-child(2){
-        flex-basis: 40%;
-    }
-
-    /* Footer e ultima sezione */
-
-    #started ,footer{
-        padding: 100px;
+        padding: 0 0.5rem;
     }
 
 }
-
-/* Desktop responsive 992px */

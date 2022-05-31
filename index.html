@@ -4,298 +4,361 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive web site</title>
     <!-- STYLE -->
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="style/responsive-tablet.css">
     <link rel="stylesheet" href="style/responsive-desktop.css">
+    <!-- FONT -->
+
+    <!-- FONT AWESOME -->
+    <script src="https://kit.fontawesome.com/ddb740f05b.js" crossorigin="anonymous"></script>
+    <title>Responsive web site</title>
 </head>
-<body class="container">
-    <!-- Intestazione -->
-    <header class="border">
-        <!-- Navigazione -->
-        <nav class="border small-pad-tb inside-container">
-            <div id="logo" class="border mini-block-header"></div>
-            <div id="navbar" class="mini-block-header border"></div>
-        </nav>
+<body>
+    <header class=" bgc-blue ">
+        <div class="container">
+            <div class="navbar padding-repeat">
+                <a href="#" class="block">
+                    <img id="logo" src="img/logo.png" alt="logo">
+                </a>
+                <a href="#" class="block"><i class="fa-solid fa-bars white"></i></a>
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="#planning">Planning</a>
+                        </li>
+                        <li>
+                            <a href="#testimonials">Testimonials</a>
+                        </li>
+                        <li>
+                            <a href="#features">Features</a>
+                        </li>
+                        <li>
+                            <a href="#about-us">About us</a>
+                        </li>
+                        <li>
+                            <a href="#get-started" class="btn get-started-btn">Get Started</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
     </header>
-    <!--Contenuti principali  -->
+    
     <main>
-        <section id="process">
 
-            <div id="first-row">      
-                <div class="inside-container inside-pad border card">
-                    <h2 class="marg-b-20">Get a demo application</h2>
-                    <p class="marg-b-20">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus magnam aliquam 
-                        laboriosam nisi nulla id recusandae repudiandae debitis! Doloremque deleniti vero 
-                        quam unde obcaecati esse voluptatum veritatis dolore distinctio velit?
-                    </p>
-                    <a href="#" class="app-store-button btn marg-b-20"></a>
-                    <img src="" alt="photo">
-                </div>
-                
-                <div class="inside-container inside-pad border card">
-                    <div class="card-img block-center">
-                        <img src="" alt="photo">
+        <section id="points">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="card marg-b-20 big">
+                            <div>
+                                <h2 class="marg-b-20 pad-t-20">Get a demo application</h2>
+                                <p class="marg-b-20">
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit 
+                                    mollitia impedit ducimus quod aliquam voluptates vel ut eius, ex quidem 
+                                    necessitatibus quam architecto pariatur voluptatem fugit deserunt 
+                                    aspernatur veritatis totam.
+                                </p>
+                                <a href="#"  class="btn app-store-btn bgc-blue marg-b-20">
+                                    <i class="fa-brands fa-apple"></i><span>App Store</span>
+                                </a>
+                            </div>
+                            <figure>
+                                <img src="img/phone.png" alt="photo">
+                            </figure>
+                        </div>
                     </div>
-                    <h2 class="marg-b-20 text-center">Get a demo application</h2>
-                    <p class="marg-b-20 text-center">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus magnam aliquam 
-                        laboriosam nisi nulla id recusandae repudiandae debitis! Doloremque deleniti vero 
-                        quam unde obcaecati esse voluptatum veritatis dolore distinctio velit?
-                    </p>
+
+                    <div class="col">
+                        <div class="card marg-b-20">
+                            <div class="marg-b-20 marg-t-20">
+                                <i class="fa-solid fa-code fa-3x"></i>
+                            </div>
+                            <h2 class="marg-b-20">Clean Code</h2>
+                            <p class="marg-b-20">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus 
+                                voluptatum tempore nam incidunt labore possimus, eligendi vero. Esse ea 
+                                asperiores labore, iure temporibus dolores excepturi fugiat, velit ipsam 
+                                accusamus explicabo.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="col">
+                        <div class="card marg-b-20">
+                            <div class="marg-b-20 marg-t-20">
+                                <i class="fa-solid fa-compass-drafting fa-3x"></i>
+                            </div>
+                            <h2 class="marg-b-20">Web Design</h2>
+                            <p class="marg-b-20">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus 
+                                voluptatum tempore nam incidunt labore possimus, eligendi vero. Esse ea 
+                                asperiores labore, iure temporibus dolores excepturi fugiat, velit ipsam 
+                                accusamus explicabo.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="col">
+                        <div class="card marg-b-20">
+                            <div class="marg-b-20 marg-t-20">
+                                <i class="fa-solid fa-laptop-code fa-3x"></i>
+                            </div>
+                            <h2 class="marg-b-20">Developement</h2>
+                            <p class="marg-b-20">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus 
+                                voluptatum tempore nam incidunt labore possimus, eligendi vero. Esse ea 
+                                asperiores labore, iure temporibus dolores excepturi fugiat, velit ipsam 
+                                accusamus explicabo.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="col">
+                        <div class="card marg-b-20">
+                            <div class="marg-b-20 marg-t-20">
+                                <i class="fa-solid fa-bullhorn fa-3x"></i>
+                            </div>
+                            <h2 class="marg-b-20">Branding</h2>
+                            <p class="marg-b-20">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus 
+                                voluptatum tempore nam incidunt labore possimus, eligendi vero. Esse ea 
+                                asperiores labore, iure temporibus dolores excepturi fugiat, velit ipsam 
+                                accusamus explicabo.
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
-
-            <div id="second-row">
-                <div class="inside-container inside-pad border card">
-                    <div class="card-img block-center">
-                        <img src="" alt="photo">
-                    </div>
-                    <h2 class="marg-b-20 text-center">Get a demo application</h2>
-                    <p class="marg-b-20 text-center">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus magnam aliquam 
-                        laboriosam nisi nulla id recusandae repudiandae debitis! Doloremque deleniti vero 
-                        quam unde obcaecati esse voluptatum veritatis dolore distinctio velit?
-                    </p>
-                </div>
-                
-                <div class="inside-container inside-pad border card">
-                    <div class="card-img block-center">
-                        <img src="" alt="photo">
-                    </div>
-                    <h2 class="marg-b-20 text-center">Get a demo application</h2>
-                    <p class="marg-b-20 text-center">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus magnam aliquam 
-                        laboriosam nisi nulla id recusandae repudiandae debitis! Doloremque deleniti vero 
-                        quam unde obcaecati esse voluptatum veritatis dolore distinctio velit?
-                    </p>
-                </div>
-                
-                <div class="inside-container inside-pad border card">
-                    <div class="card-img block-center">
-                        <img src="" alt="photo">
-                    </div>
-                    <h2 class="marg-b-20 text-center">Get a demo application</h2>
-                    <p class="marg-b-20 text-center">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus magnam aliquam 
-                        laboriosam nisi nulla id recusandae repudiandae debitis! Doloremque deleniti vero 
-                        quam unde obcaecati esse voluptatum veritatis dolore distinctio velit?
-                    </p>
-                </div>
-            </div>
-
         </section>
-
-        <!-- Planning -->
-        <section id="planning" class=" border">
-            <div>
-                <div class="inside-container block-center">
-                    <img src="" alt="photo">
+        
+        <section id="planning" class="bgc-violet">
+            <div class="container">
+                <div class="row-desktop">
+                    <div class="col-desktop">
+                        <figure>
+                            <img src="img/planning1.png" alt="photo">
+                        </figure>
+                        <h2 class="white marg-b-20 marg-t-20">Stategic Planning</h2>
+                        <p class="white marg-b-20">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam totam in rem 
+                            eveniet ut? Praesentium ratione, doloremque laborum odit blanditiis excepturi 
+                            impedit similique voluptatum facilis. Asperiores nesciunt et eaque similique.
+                        </p>
+                    </div>
+                    <div id="planning-photo" class="col-desktop">
+                        <figure class="marg-b-20">
+                            <img src="img/planning2.png" alt="photo">
+                        </figure>
+                        <div>
+                            <h2 class="marg-b-20 text-center">App Developement</h2>
+                            <p class="marg-b-80 text-center">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis veniam
+                                iusto libero in atque. Modi at nesciunt magni
+                            </p>
+                        </div>
+                        <a href="#" class="circle-link"><i class="fa-solid fa-arrow-down"></i></a>
+                    </figure>
                 </div>
-                <h2 class="marg-t-20 text-center">Strategic Planning</h2>
-                <p class="marg-t-20 text-center">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis accusantium nisi repellendus 
-                    at? Ut dolore enim cumque deleniti sint eius, aliquid laudantium expedita dolorum consequatur 
-                    impedit, placeat animi qui veniam.
-                </p>
             </div>
-            <div>
-                <div class="relative marg-t-20 block-center">
-                    <img src="" alt="photo">
-                    <div id="circle-link"></div> <!-- link circolare-->
-                </div>
             </div>
         </section>
-
-        <!-- Testimonials -->
+        
         <section id="testimonials">
-            <div class="inside-container">
-                <div>
-                    <h3 class="text-center">Testimonials</h3>
-                    <h2 class="text-center marg-t-20">We are committed expert partners</h2>
-                    <p class="text-center marg-t-20">
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur vel minus, similique 
-                        ex qui quod cupiditate aliquid quam ipsum quia hic ut, inventore officiis, deleniti animi 
-                        maxime officia optio ad.
-                    </p>
-                </div>
-                
-                <!-- Partner cards -->
-                <div class="partner-card marg-t-20 border">
-                    <div class="block-center img-partner border marg-b-20"></div>
-                    <div class="testimonials-descr">
-                        <p class="text-center">
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus libero a tenetur 
-                            voluptas cupiditate eum, laboriosam sapiente perferendis, maiores labore earum dolore 
-                            eveniet iure quidem, consectetur obcaecati similique vero consequuntur.
+            <div class="container">
+                    <div>
+                        <h3 class="marg-b-20">Testimonials</h3>
+                        <h2 class="marg-b-20 blue">We are committed axpert partners</h2>
+                        <p>
+                            We place huge value on strong relationships and have seen the benefit they bring
+                            to our business. Costumer feedback is vital in helping us to get it right.
                         </p>
-                        <address class="text-center marg-t-20">NAT REYNOLDS</address>
                     </div>
-                </div>
 
-                <div class="partner-card marg-t-20 border">
-                    <div class="block-center img-partner border marg-b-20"></div>
-                    <div class="testimonials-descr">
-                        <p class="text-center">
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus libero a tenetur 
-                            voluptas cupiditate eum, laboriosam sapiente perferendis, maiores labore earum dolore 
-                            eveniet iure quidem, consectetur obcaecati similique vero consequuntur.
-                        </p>
-                        <address class="text-center marg-t-20">NAT REYNOLDS</address>
+                    <div class="flex-col">
+                        <div>
+                            <img class="img-partner marg-b-20" src="img/testimonial1.jpg" alt="testimonial1">
+                        </div>
+                        <div >
+                            <p class="marg-b-20">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit expedita 
+                                delectus nobis obcaecati suscipit unde corporis at dignissimos. Totam 
+                                modi soluta est cupiditate consectetur excepturi eos praesentium 
+                                voluptates doloremque tempora?
+                            </p>
+                            <address class="marg-b-20">NAT REYNOLDS</address>
+                        </div>
                     </div>
-                </div>
 
-                <div class="partner-card marg-t-20 border">
-                    <div class="block-center img-partner border marg-b-20"></div>
-                    <div class="testimonials-descr">
-                        <p class="text-center">
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus libero a tenetur 
-                            voluptas cupiditate eum, laboriosam sapiente perferendis, maiores labore earum dolore 
-                            eveniet iure quidem, consectetur obcaecati similique vero consequuntur.
+                    <div class="flex-col">
+                        <div>
+                            <img class="img-partner marg-b-20" src="img/testimonial2.jpg" alt="testimonial2">
+                        </div>
+                        <div>
+                            <p class="marg-b-20">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit expedita 
+                                delectus nobis obcaecati suscipit unde corporis at dignissimos. Totam 
+                                modi soluta est cupiditate consectetur excepturi eos praesentium 
+                                voluptates doloremque tempora?
+                            </p>
+                            <address class="marg-b-20">CELIA ALMEDA</address>
+                        </div>
+                    </div>
+
+                    <div class="flex-col">
+                        <div>
+                            <img class="img-partner marg-b-20" src="img/testimonial3.jpg" alt="testimonial3">
+                        </div>
+                        <div>
+                            <p class="marg-b-20">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit expedita 
+                                delectus nobis obcaecati suscipit unde corporis at dignissimos. Totam 
+                                modi soluta est cupiditate consectetur excepturi eos praesentium 
+                                voluptates doloremque tempora?
+                            </p>
+                            <address class="marg-b-20">BOB ROBERTS</address>
+                        </div>
+                    </div>
+            </div>
+        </section>
+        
+        <section id="features" class="bgc-violet">
+            <div class="container">
+                <h2 class="marg-b-20">Benefits of working with us</h2>
+                <div class="features-cards">
+                    <div>
+                        <div class="fa-3x marg-b-20">01</div>
+                        <h3 class="marg-b-20">High Quality</h3>
+                        <p class="marg-b-20">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi ratione quam, 
+                            sint et odit a at hic tenetur similique voluptatem autem nulla laboriosam 
+                            quidem, temporibus alias eveniet aliquam. Nisi, iusto?
                         </p>
-                        <address class="text-center marg-t-20">NAT REYNOLDS</address>
+                        <a href="#" class="btn more-btn marg-b-20">more</a>
+                    </div>
+                    <div>
+                        <div class="fa-3x marg-b-20">02</div>
+                        <h3 class="marg-b-20">Creative Team</h3>
+                        <p class="marg-b-20">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi ratione quam, 
+                            sint et odit a at hic tenetur similique voluptatem autem nulla laboriosam 
+                            quidem, temporibus alias eveniet aliquam. Nisi, iusto?
+                        </p>
+                        <a href="#" class="btn more-btn marg-b-20">more</a>
+                    </div>
+                    <div>
+                        <div class="fa-3x marg-b-20">03</div>
+                        <h3 class="marg-b-20">Amazing Results</h3>
+                        <p class="marg-b-20">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi ratione quam, 
+                            sint et odit a at hic tenetur similique voluptatem autem nulla laboriosam 
+                            quidem, temporibus alias eveniet aliquam. Nisi, iusto?
+                        </p>
+                        <a href="#" class="btn more-btn marg-b-20">more</a>
+                    </div>
+                    <div>
+                        <div class="fa-3x marg-b-20">04</div>
+                        <h3 class="marg-b-20">Best Pricing</h3>
+                        <p class="marg-b-20">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi ratione quam, 
+                            sint et odit a at hic tenetur similique voluptatem autem nulla laboriosam 
+                            quidem, temporibus alias eveniet aliquam. Nisi, iusto?
+                        </p>
+                        <a href="#" class="btn more-btn marg-b-20">more</a>
+                    </div>
+                    <div>
+                        <div class="fa-3x marg-b-20">05</div>
+                        <h3 class="marg-b-20">Innovations</h3>
+                        <p class="marg-b-20">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi ratione quam, 
+                            sint et odit a at hic tenetur similique voluptatem autem nulla laboriosam 
+                            quidem, temporibus alias eveniet aliquam. Nisi, iusto?
+                        </p>
+                        <a href="#" class="btn more-btn marg-b-20">more</a>
+                    </div>
+                    <div>
+                        <div class="fa-3x marg-b-20">06</div>
+                        <h3 class="marg-b-20">24/7 Support</h3>
+                        <p class="marg-b-20">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi ratione quam, 
+                            sint et odit a at hic tenetur similique voluptatem autem nulla laboriosam 
+                            quidem, temporibus alias eveniet aliquam. Nisi, iusto?
+                        </p>
+                        <a href="#" class="btn more-btn marg-b-20">more</a>
                     </div>
                 </div>
-                
             </div>
         </section>
 
-        <!-- Quality -->
-        <section id="quality" class="bgc-quality">
-            <div class="inside-container border">
-                <h2 class="marg-b-30 text-center">Benefits of working with us</h2>
-                <!-- Quality factor -->
-                <div class="qualities">
-                    <div class="border marg-quality">
-                        <div class="factor-number">01</div>
-                        <h3 class="marg-t-20">Height quality</h3>
-                        <p class="marg-t-20">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora tempore, porro officia
-                            dolorem suscipit id excepturi voluptatem obcaecati pariatur maxime dolores dolorum 
-                            nihil totam quibusdam, praesentium, doloremque similique explicabo. Sapiente.
-                        </p>
-                        <a href="#" class="btn quality-btn border marg-t-20"></a>
-                    </div>
-                    
-                    <div class="border marg-quality">
-                        <div class="factor-number">01</div>
-                        <h3 class="marg-t-20">Height quality</h3>
-                        <p class="marg-t-20">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora tempore, porro officia
-                            dolorem suscipit id excepturi voluptatem obcaecati pariatur maxime dolores dolorum 
-                            nihil totam quibusdam, praesentium, doloremque similique explicabo. Sapiente.
-                        </p>
-                        <a href="#" class="btn quality-btn border marg-t-20"></a>
-                    </div>
-                    
-                    <div class="border marg-quality">
-                        <div class="factor-number">01</div>
-                        <h3 class="marg-t-20">Height quality</h3>
-                        <p class="marg-t-20">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora tempore, porro officia
-                            dolorem suscipit id excepturi voluptatem obcaecati pariatur maxime dolores dolorum 
-                            nihil totam quibusdam, praesentium, doloremque similique explicabo. Sapiente.
-                        </p>
-                        <a href="#" class="btn quality-btn border marg-t-20"></a>
-                    </div>
-                    
-                    <div class="border marg-quality">
-                        <div class="factor-number">01</div>
-                        <h3 class="marg-t-20">Height quality</h3>
-                        <p class="marg-t-20">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora tempore, porro officia
-                            dolorem suscipit id excepturi voluptatem obcaecati pariatur maxime dolores dolorum 
-                            nihil totam quibusdam, praesentium, doloremque similique explicabo. Sapiente.
-                        </p>
-                        <a href="#" class="btn quality-btn border marg-t-20"></a>
-                    </div>
-                    
-                    <div class="border marg-quality">
-                        <div class="factor-number">01</div>
-                        <h3 class="marg-t-20">Height quality</h3>
-                        <p class="marg-t-20">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora tempore, porro officia
-                            dolorem suscipit id excepturi voluptatem obcaecati pariatur maxime dolores dolorum 
-                            nihil totam quibusdam, praesentium, doloremque similique explicabo. Sapiente.
-                        </p>
-                        <a href="#" class="btn quality-btn border marg-t-20"></a>
-                    </div>
-                    
-                    <div class="border marg-quality">
-                        <div class="factor-number">01</div>
-                        <h3 class="marg-t-20">Height quality</h3>
-                        <p class="marg-t-20">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora tempore, porro officia
-                            dolorem suscipit id excepturi voluptatem obcaecati pariatur maxime dolores dolorum 
-                            nihil totam quibusdam, praesentium, doloremque similique explicabo. Sapiente.
-                        </p>
-                        <a href="#" class="btn quality-btn border marg-t-20"></a>
-                    </div>
-                </div>
-            </div>
-        </section>
-            
-            <!-- About Us -->
         <section id="about-us">
-            <div class="inside-container">
-                <div>
-                    <h2 class="marg-t-20">About us</h2>
-                    <p class="marg-t-20">
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium minus non id, commodi 
-                        explicabo, magni doloremque, corporis officiis labore modi distinctio aut esse quisquam 
-                        delectus laudantium nam vitae laboriosam ipsa!
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium minus non id, commodi 
-                        explicabo, magni doloremque, corporis officiis labore modi distinctio aut esse quisquam 
-                        delectus laudantium nam vitae laboriosam ipsa!
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium minus non id, commodi 
-                        explicabo, magni doloremque, corporis officiis labore modi distinctio aut esse quisquam 
-                        delectus laudantium nam vitae laboriosam ipsa!
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium minus non id, commodi 
-                        explicabo, magni doloremque, corporis officiis labore modi distinctio aut esse quisquam 
-                        delectus laudantium nam vitae laboriosam ipsa!
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium minus non id, commodi 
-                        explicabo, magni doloremque, corporis officiis labore modi distinctio aut esse quisquam 
-                        delectus laudantium nam vitae laboriosam ipsa!
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium minus non id, commodi 
-                        explicabo, magni doloremque, corporis officiis labore modi distinctio aut esse quisquam 
-                        delectus laudantium nam vitae laboriosam ipsa!
-                    </p>
-                </div>
-                <div>
-                    <div class="img-partner border marg-t-20"></div>
-                    <p class="marg-t-20">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora, enim. Odio explicabo
-                    </p>
-                    <a href="#" class="about-us-btn btn marg-t-20 bgc-blue"></a>
+            <div class="container">
+                <div class="tablet-flex">
+                    <div>
+                        <h2 class="marg-b-20">About Us</h2>
+                        <p class="marg-b-20">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas perferendis tempore 
+                            ex fugiat pariatur nobis quod fuga enim nemo neque minus assumenda mollitia, 
+                            itaque eaque, impedit repellendus nihil? Quod, qui.Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas perferendis tempore 
+                            ex fugiat pariatur nobis quod fuga enim nemo neque minus assumenda mollitia, 
+                            itaque eaque, impedit repellendus nihil? Quod, qui.Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas perferendis tempore 
+                            ex fugiat pariatur nobis quod fuga enim nemo neque minus assumenda mollitia, 
+                            itaque eaque, impedit repellendus nihil? Quod, qui.Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas perferendis tempore 
+                            ex fugiat pariatur nobis quod fuga enim nemo neque minus assumenda mollitia, 
+                            itaque eaque, impedit repellendus nihil? Quod, qui.Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas perferendis tempore 
+                            ex fugiat pariatur nobis quod fuga enim nemo neque minus assumenda mollitia, 
+                            itaque eaque, impedit repellendus nihil? Quod, qui.Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas perferendis tempore 
+                            ex fugiat pariatur nobis quod fuga enim nemo neque minus assumenda mollitia, 
+                            itaque eaque, impedit repellendus nihil? Quod, qui.Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas perferendis tempore 
+                            ex fugiat pariatur nobis quod fuga enim nemo neque minus assumenda mollitia, 
+                            itaque eaque, impedit repellendus nihil? Quod, qui.
+                        </p>
+                    </div>
+                    <div>
+                        <div class="marg-b-20 relative">
+                            <img src="img/about.jpg" alt="about-us" class="img-partner">
+                            <i class="fa-solid fa-quote-right fa-3x"></i>
+                        </div>
+                        <p class="marg-b-20">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa nulla magni debitis
+                            consequuntur esse nemo modi excepturi eius asperiores ea omnis suscipit, minima 
+                            dolores vitae natus illum sed ipsam enim?
+                        </p>
+                        <a href="#" class="btn linkedin-btn"><i class="fa-brands fa-linkedin"></i><span>  Find me on Linkedin</span></a>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <!-- section started -->
-        <section id="started" class="bgc-blue">    
-                <h3 class="marg-t-20 text-center">GET STARTED</h3>
-                <h2 class="marg-t-20 text-center">Simple, Transparent Pricing</h2>
-                <h4 class="marg-t-20 text-center">It's Free!</h4>
-                <p class="marg-t-20 marg-b-20 text-center">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore mollitia neque atque 
-                    assumenda sed repellat deserunt quis beatae consequatur distinctio! Placeat illum iusto aliquam 
-                </p>
-                <a href="#" class="started-btn btn border"></a>
-                <address class="text-center marg-t-20"> Boolean</address>
+        <section id="get-started" class="bgc-violet">
+            <div class="container">
+                <div>
+                    <h3 class="marg-b-20">Get Started</h3>
+                    <h2 class="marg-b-20">Simple, Trasparent Pricing</h2>
+                    <p class="marg-b-20">It's Free</p>
+                    <p class="marg-b-20">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga nam odit, modi sit 
+                        quo nemo minus est facere accusamus nisi neque possimus porro provident fugiat 
+                        voluptates exercitationem veritatis maiores quos?
+                    </p>
+                    <a href="#" class="btn started-btn">Get Started</a>
+                    <p class="marg-b-20 marg-t-20">Copyright 2021 <i class="fa-solid fa-bell"></i> Boolean <i class="fa-solid fa-bell"></i> Class XX <a href="#">Privacy</a> <a href="#">Policy</a></p>
+                </div>
+            </div>
         </section>
 
     </main>
-    <!--Footer -->
+
     <footer class="bgc-black">
-        <div class="inside-container">
-            <p class="marg-t-20 marg-b-30">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, accusantium suscipit 
-                tempore ratione minima eveniet, eius quos aspernatur aut modi, assumenda soluta voluptates! 
+        <div>
+            <p class="marg-b-50 marg-t-20">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem nihil amet officia
+                 totam omnis harum commodi, atque nostrum sequi blanditiis adipisci eum pariatur 
+                 distinctio, aperiam, id nesciunt quis! Ipsa, consequatur?
             </p>
-            <p>
-                <a href="#">Lorem ipsum</a>dolor sit amet consectetur adipisicing elit <a href="#">Boolean Careers</a>
+            <p class="marg-b-20">
+                <a href="#">Lorem ipsum</a> dolor sit amet consectetur adipisicing elit. 
+                <a href="#">Boolean Careers</a>
             </p>
         </div>
     </footer>

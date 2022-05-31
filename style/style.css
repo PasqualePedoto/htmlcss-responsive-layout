@@ -1,249 +1,406 @@
 /* RESET */
 
 *{
-    margin: 0;
     padding: 0;
+    margin: 0;
     box-sizing: border-box;
+}
+
+/* Abbiamo fissato questo valore di padding per evitare che
+l'header in position fixed potesse coprire parte del 
+contenuto */
+
+body{
+    padding-top: 40px;
+}
+
+img{
+    max-width: 100%;
+}
+
+a{
+    text-decoration: none;
+}
+
+section
+,footer{
+    padding: 30px 100px;
+}
+
+/* CONTENITORI */
+
+.container{
+    margin: 0 auto;
+    max-width: 480px;
+}
+
+/* COLORS */
+
+.bgc-blue{
+    background-color: #0084FD;
+}
+
+.blue{
+    color: #0084FD;
+}
+
+.white{
+    color: white;
+}
+
+.bgc-lightblu{
+    background-color: #B5DDFF;
+}
+
+.bgc-violet{
+    background-color: #9792E4;
+}
+.bgc-black{
+    background-color: #333333;
 }
 
 /* UTILITIES */
 
-.border{
+.bord{
     border: 1px solid black;
 }
 
-.container{
-    max-width: 480px;
-    margin: 0 auto;
+.block{
+    display: block;
 }
 
 .btn{
-    display: block;
-    
-    border-radius: 15px;
-    padding: 10px 20px;
+    border-radius: 20px;
+    padding: 5px 10px;
+
+    max-width: 100px;
+    min-height: 15px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.block-center{
+.center-block{
     margin: 0 auto;
-}
-
-.text-center{
-    text-align: center;
 }
 
 .relative{
     position: relative;
-
-    width: 100%;
-    height: 400px;
 }
 
-/* Color bgc */
-
-.bgc-blue{
-    background-color: steelblue;
+.flex-col{
+    display: flex;
+    flex-direction: column;
 }
 
-.bgc-black{
-    background-color: #3D3D3D;
+/* PADDING */
+
+.padding-repeat{
+    padding: 10px 20px;
 }
 
-/* Inside container per allineare tutti i contenuti
- verticalmente */
-
-.inside-container{
-    max-width: 450px;
-    margin: 0 auto;
+.pad-t-20{
+    padding-top: 20px;
 }
 
-/* PADDING UTILS */
-
-.small-pad-tb{
-    padding: 10px 0;
-}
-
-.inside-pad{
-    padding: 20px;
-}
-
-.pad-b-20{
-    padding-bottom: 20px;
-}
-
-/* MARGIN UTILS */
-
-.marg-t-20{
-    margin-top: 20px;
-}
+/* MARGIN */
 
 .marg-b-20{
     margin-bottom: 20px;
 }
 
-.marg-b-30{
-    margin-bottom: 30px;
-}
-
-.marg-quality{
-    padding-top: 20px;
-    padding-left: 20px;
-}
-
-/********** HEADER **********/
-
-/* NAVIGATION */
-
-header nav{
-    min-height: 50px;
-
-    display: flex;
-    justify-content: space-between;
-}
-
-/* Logo e navbar nell'header */
-
-.mini-block-header{
-    min-height: 100%;
-    max-width: 50px;
-}
-
-/*********MAIN*********/
-
-section{
-    padding: 30px;
-}
-
-/* App store button */
-
-.btn.app-store-button{
-    color: white;
-    background-color: steelblue;
-
-    min-height: 40px;
-    max-width: 200px;
-}
-
-/* Diamo aria ai div nelle sezioni dell'area 
-principale */
-
-main section > .card{
+.marg-t-20{
     margin-top: 20px;
 }
 
-/* Ridimensioniamo il blocco contenente
-l'image */
-main .card-img{
-    max-width: 100px;
-    min-height: 100px;
+.marg-b-80{
+    margin-bottom: 100px;
 }
 
-/* Adattiamo l'immagine al generico blocco */
+.marg-b-50{
+    margin-bottom: 50px;
+}
 
-img{
+/***************** HEADER ****************/
+
+/* Rendiamo l'header fixed in modo tale che sovrasti su tutto */
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    min-height: 40px;
+
+    z-index: 2;
+
+    box-shadow: 1px 3px 3px #999999;
+}
+
+/* Cambiamo il display in flex e posizioniamo ai lati
+logo e hamburger menu */
+
+header .navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Ridimensioniamo il logo */
+
+#logo{
+    width: 40px;
+}
+
+/* Rendiamo non visibile la navbar su smartphone */
+
+header nav{
+    display: none;
     height: 100%;
 }
 
-/* Planning section */
+/*************Modelliamo la navbar******************/
 
-#planning img{
-    max-width: 100%;
+/* Cambiamo il display e miglioriamo la visibilità 
+degli li */
+
+/* GESTISCO GLI UL */
+header nav ul{
+    display: flex;
+    align-items: center;
+
+    list-style-type: none;
 }
 
-/* Link circolare */
+/* GESTISCO GLI LI */
 
-#circle-link{
-    border-radius: 50%;
-    width: 30px;
-    height: 30px;
-
-    background-color: steelblue;
-
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: 80px
+header nav li{
+    margin-right: 1rem;
 }
 
-/************ PARTNER SECTION *************/
+/* GESTISCO GLI A*/
 
-.partner-card{
-    border-radius: 20px;
-
-    padding: 20px 0;
-}
-
-.img-partner{
-    max-width: 200px;
-    height: 200px;
-    border-radius: 50%;
-
-    background-image: url('');
-}
-
-/* QUALITY SECTION */
-
-.bgc-quality{
-    background-color: steelblue;
-
-    padding: 30px 0;
-}
-
-/* Diamo aria con padding e margin alle card
-quality */
-
-#quality.bgc-quality .inside-container div{
-    padding: 20px 10px;
-    margin: 20px 0;
-}
-
-#quality .factor-number{
-    font-size: 50px;
-}
-
-/* Bottone nella section quality */
-
-.btn.quality-btn{
-    border-radius: 30px;
-    max-width: 100px;
-    height: 30px;
-
-    background-color: steelblue;
+header nav li a{
     color: white;
 }
 
-/* About us Section */
+/* HEADER BUTTON */
 
-/* Modelliamo il bottone nella section about us */
-
-#about-us .btn.about-us-btn{
-    max-width: 100px;
-    height: 20px;
-
-    color: white;
-}
-
-/* Started section */
-
-
-
-#started .btn.started-btn{
+.get-started-btn.btn{
     background-color: white;
-    color: steelblue;
+    color: black;
 
-    max-width: 250px;
-    height: 50px;
-    border-radius: 20px;
+    font-size: 15px;
+}
+
+/*************** MAIN *************/
+
+/* Modelliamo l'App Store button */
+
+#points .btn.app-store-btn{
+    color: white;
+
+    max-width: 200px;
+    min-height: 40px;
+
     margin: 0 auto;
 }
 
-/* FOOTER */
+/* Bordatura delle card */
 
-footer{
-    margin-top: -20px;
-    padding: 20px 0;
+#points .card{
+    border-radius: 30px;
+
+    background-color: #B5DDFF;
+    color: #0084FD;
+
+    padding: 10px;
+
+    /* Utilizziamo flex per centrare tutto nella card */
+
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Centriamo titolo e paragrafo delle card */
+
+#points h2, 
+#points p{
+    text-align: center;
+}
+
+#points p{
+    color: #5A6E7F;
+}
+
+/* PLANNING SECTION */
+
+/* Creiamo il riquadro bianco col il link circolare */
+
+#planning-photo{
+    background-color: white;
+
+    border-radius: 20px;
+    padding: 50px;
+
+    /* Diamo il position relative in modo da dare un riferimento
+    al link circolare che sarà in posizione absolute */
+    position: relative;
+}
+
+/* link circolare */
+
+.circle-link{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+
+    background-color: #9792E4;
+
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
 
     text-align: center;
+    line-height: 40px;
 
+    display: block;
+}
+
+/* Centriamo le foto all'interno dei blocchi */
+
+/* Viene ereditato da tutti i figli e 
+in tal modo si prende tutto */
+
+#planning
+,#testimonials{
+    text-align: center;
+}
+
+#planning figure{
+    display: flex;
+    justify-content: center;
+}
+
+/* Ridimensioniamo le immagini nella section planning */
+
+#planning figure img{
+    max-width: 300px;
+    max-height: 300px;
+}
+
+/**************** TESTIMONIALS ***************/
+
+/* Creiamo dei background circolari con le immagini
+dei partner */
+
+.img-partner{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+
+    display: block;
+
+    margin: 20px auto;
+}
+
+/* Fissiamo queste colonne inmodo tale da riutilizzarle
+successivamente per il responsive */
+
+.flex-col{
+    border-radius: 20px;
+    padding: 40px 40px;
+    margin: 20px 0;
+
+    background-color: #9792E4;
     color: white;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-col > div{
+    flex-basis: 50%;
+}
+
+/******************* FEATURES *******************/
+
+/* Rendiamo flex il blocco contenente le cards quality 
+così da poter gestire nel responsive la distribuzione
+delle stesse */
+
+#features h2{
+    text-align: center;
+}
+
+#features .features-cards{
+    display: flex;
+    flex-direction: column;
+}
+
+.features-cards > div{
+    padding: 30px 30px;
+    border-radius: 20px;
+
+    background-color: white;
+    color: #9792E4;
+
+    margin-bottom: 20px;
+}
+
+/* More button */
+
+.btn.more-btn{
+    background-color: #9792E4;
+    color: white;
+}
+
+/* ***********ABOUT US************ */
+
+/* Cambiamo la position in absolute cosi da posizionare a
+piacimento le virgolette */
+
+#about-us .fa-quote-right{
+    position: absolute;
+    top: 0;
+    left: 70%;
+
+    color: #9792E4;
+}
+
+/* Linkedin button */
+
+#about-us .btn.linkedin-btn{
+    color: white;
+    background-color: #9792E4;
+
+    max-width: 200px;
+}
+
+/************GET STARTED************/
+
+#get-started{
+    text-align: center;
+}
+
+#get-started .btn.started-btn{
+    background-color: white;
+    color: #6860e0;
+    max-width: 150px;
+    min-height: 40px;
+
+    margin: 0 auto;
+}
+
+/***************FOOTER*****************/
+
+footer{
+    color: white;
+
+    text-align: center;
 }

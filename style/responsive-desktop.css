@@ -1,50 +1,58 @@
-/* RESPONSIVE DESKTOP 992PX */
+/* DESKTOP 992PX RESPONSIVE */
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 992px){
 
-    /* Planning section */
-
-    /* Rendiamo anche questa sezione flex in modo tale da gestire meglio+
-    il posizionamneto dei contenuti */
+    /* Adattoiamo il container alle dimensioni del desktop */
 
     .container{
         max-width: 992px;
     }
 
-    .inside-container{
-        max-width: 950px;
+    /* Nascondiamo l'hamburger menu pe rfar comparire
+    la navbar */
+
+    header .fa-solid.fa-bars{
+        display: none;
     }
 
-    #planning{
+    header nav{
+        display: block;
+    }
+
+    /***************Planning****************/
+
+    /* In tal modo gestisco il gutter tra le varie cards
+    a mio piacimento */
+
+    #planning .row-desktop{
         display: flex;
         align-items: flex-end;
-        justify-content: space-between;
+
+        margin: 0 -0.5rem;
     }
 
-    #planning div:nth-child(1)
-    ,#planning div:nth-child(2){
-        flex-basis: 40%;
+    #planning .col-desktop{
+        width: calc(100% / 2 - 0.5rem);
+        padding: 0 0.5rem;
     }
 
-    /* Quality section */
+    /***************FEATURES**************/
 
-    #quality .qualities{
-        display: flex;
+    /* In tal modo gestisco il gutter tra le varie cards
+    a mio piacimento */
+
+    #features .features-cards{
+        flex-direction: row;
         flex-wrap: wrap;
-        justify-content: space-between;
+        
+        margin: 0 -1rem;
     }
 
-    /* Passiamo da 2 a 3 cards per row */
+    .features-cards > div{
+        width: calc(100% / 3 - 1rem);
 
-    #quality .qualities div{
-        flex-basis: 33%;
-
-        border-radius: 20px;
+        padding: 0 1rem;
     }
 
-    /* About us section */
 
-    #about-us{
-        padding: 30px 100px;
-    }
 }
