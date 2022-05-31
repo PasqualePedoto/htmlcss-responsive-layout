@@ -18,7 +18,7 @@
     /* Cambio il display in modo tale da 
     organizzare meglio le varie aree */
 
-    #process{
+    #process #first-row, #process #second-row{
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
@@ -27,28 +27,94 @@
     /* Dò delle dimensioni relative per best-practice
     e gestisco le dimensioni di ognuno */
     
-    main section div:first-child{
+    main section #first-row div:first-child{
         max-width: 58%;
     }
 
-    main section div:nth-child(2){
+    main section #first-row div:nth-child(2){
         max-width: 40%;
     }
 
-    main section div:nth-child(3)
-    ,main section div:nth-child(4)
-    ,main section div:nth-child(5){
-        max-width: 31%;
+    main section #second-row div:nth-child(1)
+    ,main section #second-row div:nth-child(2)
+    ,main section #second-row div:nth-child(3){
+        max-width: 33%;
     }
 
+    /* Testimonial section */
 
+    /* Rendiamo flex le cards in modo da cambiare
+    la disposizione degli elementi all'interno */
 
+    #testimonials .partner-card{
+        display: flex;
+    }
 
+    /* In tal modo il cerchio avrà la sua 
+    dimensione corretta */
+    #testimonials .partner-card .img-partner{
+        flex-basis: 100%;
+    }
+
+    /* Al fine di posizionare correttamente 
+    il testo rendiamo anche questo div flex */
+
+    .partner-card .testimonials-descr{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+
+        padding: 20px;
+    }
+
+    .partner-card .testimonials-descr p{
+        flex-basis: 100%;
+    }
+
+    .partner-card .testimonials-descr address{
+        margin-top: -20px;
+    }
+
+    /* Quality section */
+
+    /* Posizioniamo le cards a due a due */
+
+    #quality .qualities{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
     
+    #quality .qualities div{
+        flex-basis: 48%;
 
-    
+        border-radius: 20px;
+    }
 
-    
+    /* About us section */
+
+    #about-us .inside-container{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    /* Assegno delle dimensioni agli elementi
+    flexati */
+
+    #about-us .inside-container div:first-child{
+        flex-basis: 55%;
+    }
+
+    #about-us .inside-container div:nth-child(2){
+        flex-basis: 40%;
+    }
+
+    /* Footer e ultima sezione */
+
+    #started ,footer{
+        padding: 100px;
+    }
+
 }
 
 /* Desktop responsive 992px */
