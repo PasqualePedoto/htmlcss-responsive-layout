@@ -1,0 +1,50 @@
+/* RESPONSIVE DESKTOP 992PX */
+
+@media screen and (min-width: 992px) {
+
+    /* Planning section */
+
+    /* Rendiamo anche questa sezione flex in modo tale da gestire meglio+
+    il posizionamneto dei contenuti */
+
+    .container{
+        max-width: 992px;
+    }
+
+    .inside-container{
+        max-width: 950px;
+    }
+
+    #planning{
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+    }
+
+    #planning div:nth-child(1)
+    ,#planning div:nth-child(2){
+        flex-basis: 40%;
+    }
+
+    /* Quality section */
+
+    #quality .qualities{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    /* Passiamo da 2 a 3 cards per row */
+
+    #quality .qualities div{
+        flex-basis: 33%;
+
+        border-radius: 20px;
+    }
+
+    /* About us section */
+
+    #about-us{
+        padding: 30px 100px;
+    }
+}
